@@ -10,10 +10,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var anounumouslyButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        anounumouslyButton.layer.borderWidth = 2.0
+        anounumouslyButton.layer.borderColor = UIColor.white.cgColor
     }
     @IBAction func loginAnonymouslyDidTapped(_ sender: Any) {
         print("ok")
